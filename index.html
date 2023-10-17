@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Table Reservation</title>
+</head>
+<body>
+<div class="container">
+    <h1>TABLE RESERVATION</h1>
+
+    <div class="row align-items-start">
+        <div class="col">
+            <div class="border border-2 border-black pt-3">
+                <div class="mb-3 pt-3">
+                    <label for="tableNum" class="form-label">Table number</label>
+                    <input type="text" class="form-control" id="tableNum" placeholder="Table number">
+                    <label for="tableName" class="form-label">Table name</label>
+                    <input type="text" class="form-control" id="tableName" placeholder="Table name">
+                    <label for="persNum" class="form-label">People number</label>
+                    <input type="text" class="form-control" id="persNum" placeholder="People number">
+                </div>
+                <div class="mb-3">
+                    <button type="button" id="book" class="btn btn-primary btn-lg" onclick="recTable()">Book</button>
+                    <button type="button" id="delAll" class="btn btn-primary btn-lg" onclick="delAll()">Delete All</button>
+                </div>
+            </div>
+        </div>
+        <div class="col" id="coloumn2">
+        </div>
+    </div>
+    
+    
+    <div id="tab"></div>
+</div>   
+
+
+<script src="https://kit.fontawesome.com/02470a91cf.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
